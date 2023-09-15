@@ -1,0 +1,46 @@
+.switchingTabs{
+  height: 34px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px;
+
+  .tabItems{
+   height: 30px;
+   display: flex;
+   align-items: center;
+   position: relative;
+ 
+  
+   .tabItem{
+    
+    display: flex;
+    height: 100%;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position:relative;
+    z-index: 1;
+
+    &.active{
+        color: white;
+    }
+
+   }
+
+
+   .movingbg{
+    height: 30px;
+    width:100px;
+    border-radius: 15px;
+    background-image: var(--gradient);
+    position:absolute;
+    left:100px;
+    
+   }
+ 
+
+
+  }
+
+}
